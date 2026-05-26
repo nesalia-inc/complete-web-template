@@ -27,4 +27,4 @@ jobs:
 
       - run: pnpm install
 
-      - run: turbo build
+      - run: pnpm turbo build

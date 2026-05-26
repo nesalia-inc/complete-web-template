@@ -27,4 +27,4 @@ jobs:
 
       - run: pnpm install
 
-      - run: turbo lint
+      - run: pnpm turbo lint
