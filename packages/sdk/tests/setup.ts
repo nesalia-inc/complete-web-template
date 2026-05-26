@@ -4,9 +4,9 @@ import { migrate } from "drizzle-orm/pglite/migrator";
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
+import { TRPCError } from "@trpc/server";
 import type { FetchCreateContextFnOptions } from "@trpc/server/adapters/fetch";
 import { appRouter } from "@complete-web-template/api";
-import { createContext } from "@complete-web-template/api/context";
 import { setBaseUrl } from "./helpers/client";
 
 import path from "path";
@@ -37,7 +37,10 @@ beforeAll(async () => {
 
     // Validate API key
     if (authHeader !== TEST_API_KEY) {
-      throw new Error("Unauthorized: Invalid or missing API key");
+      throw new TRPCError({
+        code: 'UNAUTHORIZED',
+        message: 'Invalid or missing API key',
+      });
     }
 
     return {
