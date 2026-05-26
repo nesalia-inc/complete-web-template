@@ -1,0 +1,472 @@
+# Better Auth Documentation Map
+# Generated: 2026-05-22
+# Source: https://better-auth.com
+
+documentation:
+  url: https://better-auth.com
+  title: Better Auth
+  version: latest
+  description: The authentication framework for TypeScript
+
+sections:
+  - title: Get Started
+    slug: getting-started
+    link: /docs/introduction
+    description: Introduction to Better Auth
+    pages:
+      - title: Introduction
+        link: /docs/introduction
+        description: What is Better Auth and why use it
+      - title: Comparison
+        link: /docs/comparison
+        description: Compare Better Auth with other auth solutions
+      - title: Installation
+        link: /docs/installation
+        description: How to install Better Auth
+      - title: Basic Usage
+        link: /docs/basic-usage
+        description: Getting started with basic authentication
+
+  - title: Concepts
+    slug: concepts
+    link: /docs/concepts/api
+    description: Core concepts and architecture
+    pages:
+      - title: API
+        link: /docs/concepts/api
+        description: API concepts
+      - title: CLI
+        link: /docs/concepts/cli
+        description: Command-line interface
+      - title: Client
+        link: /docs/concepts/client
+        description: Client-side usage
+      - title: Cookies
+        link: /docs/concepts/cookies
+        description: Cookie management
+      - title: Database
+        link: /docs/concepts/database
+        description: Database configuration
+      - title: Email
+        link: /docs/concepts/email
+        description: Email handling
+      - title: Hooks
+        link: /docs/concepts/hooks
+        description: Lifecycle hooks
+      - title: OAuth
+        link: /docs/concepts/oauth
+        description: OAuth authentication
+      - title: Plugins
+        link: /docs/concepts/plugins
+        description: Plugin system
+      - title: Rate Limit
+        link: /docs/concepts/rate-limit
+        description: Rate limiting
+      - title: Session Management
+        link: /docs/concepts/session-management
+        description: Session handling
+      - title: TypeScript
+        link: /docs/concepts/typescript
+        description: TypeScript support
+      - title: User & Accounts
+        link: /docs/concepts/user-accounts
+        description: User and account management
+
+  - title: Adapters
+    slug: adapters
+    link: /docs/adapters/postgresql
+    description: Database adapters for various databases
+    pages:
+      - title: PostgreSQL
+        link: /docs/adapters/postgresql
+        description: PostgreSQL database adapter
+      - title: MySQL
+        link: /docs/adapters/mysql
+        description: MySQL database adapter
+      - title: SQLite
+        link: /docs/adapters/sqlite
+        description: SQLite database adapter
+      - title: MongoDB
+        link: /docs/adapters/mongo
+        description: MongoDB adapter
+      - title: Drizzle ORM
+        link: /docs/adapters/drizzle
+        description: Drizzle ORM adapter
+      - title: Prisma
+        link: /docs/adapters/prisma
+        description: Prisma adapter
+      - title: MS SQL
+        link: /docs/adapters/mssql
+        description: Microsoft SQL Server adapter
+      - title: Community Adapters
+        link: /docs/adapters/community-adapters
+        description: Community-contributed adapters
+      - title: Other Relational Databases
+        link: /docs/adapters/other-relational-databases
+        description: Other relational database adapters
+
+  - title: Authentication Providers
+    slug: providers
+    link: /docs/authentication
+    description: OAuth and authentication providers
+    pages:
+      - title: Email & Password
+        link: /docs/authentication/email-password
+        description: Email and password authentication
+      - title: Apple
+        link: /docs/authentication/apple
+        description: Sign in with Apple
+      - title: Google
+        link: /docs/authentication/google
+        description: Sign in with Google
+      - title: GitHub
+        link: /docs/authentication/github
+        description: Sign in with GitHub
+      - title: Discord
+        link: /docs/authentication/discord
+        description: Sign in with Discord
+      - title: Spotify
+        link: /docs/authentication/spotify
+        description: Sign in with Spotify
+      - title: Twitch
+        link: /docs/authentication/twitch
+        description: Sign in with Twitch
+      - title: Twitter (X)
+        link: /docs/authentication/twitter
+        description: Sign in with Twitter/X
+      - title: Facebook
+        link: /docs/authentication/facebook
+        description: Sign in with Facebook
+      - title: LinkedIn
+        link: /docs/authentication/linkedin
+        description: Sign in with LinkedIn
+      - title: Microsoft
+        link: /docs/authentication/microsoft
+        description: Sign in with Microsoft
+      - title: Atlassian
+        link: /docs/authentication/atlassian
+        description: Sign in with Atlassian
+      - title: Slack
+        link: /docs/authentication/slack
+        description: Sign in with Slack
+      - title: GitLab
+        link: /docs/authentication/gitlab
+        description: Sign in with GitLab
+      - title: Linear
+        link: /docs/authentication/linear
+        description: Sign in with Linear
+      - title: Figma
+        link: /docs/authentication/figma
+        description: Sign in with Figma
+      - title: Notion
+        link: /docs/authentication/notion
+        description: Sign in with Notion
+      - title: Reddit
+        link: /docs/authentication/reddit
+        description: Sign in with Reddit
+      - title: Salesforce
+        link: /docs/authentication/salesforce
+        description: Sign in with Salesforce
+      - title: Dropbox
+        link: /docs/authentication/dropbox
+        description: Sign in with Dropbox
+      - title: Cognito
+        link: /docs/authentication/cognito
+        description: AWS Cognito integration
+      - title: Vercel
+        link: /docs/authentication/vercel
+        description: Vercel authentication
+      - title: Google Workspace
+        link: /docs/authentication/google-workspace
+        description: Google Workspace integration
+      - title: OAuth Provider
+        link: /docs/authentication/oauth-provider
+        description: Generic OAuth provider
+      - title: Other Social Providers
+        link: /docs/authentication/other-social-providers
+        description: Other social login providers
+
+  - title: Plugins
+    slug: plugins
+    link: /docs/plugins
+    description: Plugin ecosystem
+    pages:
+      - title: 2FA
+        link: /docs/plugins/2fa
+        description: Two-factor authentication
+      - title: Admin
+        link: /docs/plugins/admin
+        description: Admin panel plugin
+      - title: Agent Auth
+        link: /docs/plugins/agent-auth
+        description: Agent authentication
+      - title: Anonymous
+        link: /docs/plugins/anonymous
+        description: Anonymous sign-in
+      - title: API Key
+        link: /docs/plugins/api-key
+        description: API key authentication
+      - title: Autumn Billing
+        link: /docs/plugins/autumn-billing
+        description: Autumn billing integration
+      - title: Bearer Token
+        link: /docs/plugins/bearer-token
+        description: Bearer token authentication
+      - title: Captcha
+        link: /docs/plugins/captcha
+        description: Captcha integration
+      - title: Chargebee
+        link: /docs/plugins/chargebee
+        description: Chargebee integration
+      - title: Creem
+        link: /docs/plugins/creem
+        description: Creem payment integration
+      - title: Device Authorization
+        link: /docs/plugins/device-authorization
+        description: RFC 8628 device flow
+      - title: Dodo Payments
+        link: /docs/plugins/dodo-payments
+        description: Dodo Payments integration
+      - title: Email OTP
+        link: /docs/plugins/email-otp
+        description: Email one-time passwords
+      - title: Generic OAuth
+        link: /docs/plugins/generic-oauth
+        description: Generic OAuth integration
+      - title: Have I Been Pwned
+        link: /docs/plugins/have-i-been-pwned
+        description: Password breach checking
+      - title: i18n
+        link: /docs/plugins/i18n
+        description: Internationalization
+      - title: JWT
+        link: /docs/plugins/jwt
+        description: JWT support
+      - title: Last Login Method
+        link: /docs/plugins/last-login-method
+        description: Track last login method
+      - title: Magic Link
+        link: /docs/plugins/magic-link
+        description: Passwordless email links
+      - title: MCP
+        link: /docs/plugins/mcp
+        description: Model Context Protocol
+      - title: Multi Session
+        link: /docs/plugins/multi-session
+        description: Multiple sessions support
+      - title: OAuth Provider
+        link: /docs/plugins/oauth-provider
+        description: Build your own OAuth provider
+      - title: OAuth Proxy
+        link: /docs/plugins/oauth-proxy
+        description: OAuth proxy
+      - title: OIDC Provider
+        link: /docs/plugins/oidc-provider
+        description: OpenID Connect provider
+      - title: One Tap
+        link: /docs/plugins/one-tap
+        description: Google One Tap
+      - title: One-Time Token
+        link: /docs/plugins/one-time-token
+        description: One-time tokens
+      - title: Open API
+        link: /docs/plugins/open-api
+        description: OpenAPI integration
+      - title: Organization
+        link: /docs/plugins/organization
+        description: Multi-tenant organization support
+      - title: Passkey
+        link: /docs/plugins/passkey
+        description: WebAuthn passkeys
+      - title: Phone Number
+        link: /docs/plugins/phone-number
+        description: Phone number authentication
+      - title: Polar
+        link: /docs/plugins/polar
+        description: Polar payment integration
+      - title: SCIM
+        link: /docs/plugins/scim
+        description: SCIM user provisioning
+      - title: SIWE
+        link: /docs/plugins/siwe
+        description: Sign In With Ethereum
+      - title: SSO
+        link: /docs/plugins/sso
+        description: Single sign-on
+      - title: Stripe
+        link: /docs/plugins/stripe
+        description: Stripe billing integration
+      - title: Test Utils
+        link: /docs/plugins/test-utils
+        description: Testing utilities
+      - title: Username
+        link: /docs/plugins/username
+        description: Username authentication
+
+  - title: Integrations
+    slug: integrations
+    link: /docs/integrations/next
+    description: Framework integrations
+    pages:
+      - title: Next.js
+        link: /docs/integrations/next
+        description: Next.js integration
+      - title: SvelteKit
+        link: /docs/integrations/sveltekit
+        description: SvelteKit integration
+      - title: Nuxt
+        link: /docs/integrations/nuxt
+        description: Nuxt.js integration
+      - title: Astro
+        link: /docs/integrations/astro
+        description: Astro integration
+      - title: React Router v7
+        link: /docs/integrations/react-router-v7
+        description: React Router v7 integration
+      - title: SolidStart
+        link: /docs/integrations/solidstart
+        description: SolidStart integration
+      - title: Elysia
+        link: /docs/integrations/elysia
+        description: Elysia integration
+      - title: Hono
+        link: /docs/integrations/hono
+        description: Hono integration
+      - title: Fastify
+        link: /docs/integrations/fastify
+        description: Fastify integration
+      - title: Express
+        link: /docs/integrations/express
+        description: Express integration
+      - title: NestJS
+        link: /docs/integrations/nestjs
+        description: NestJS integration
+      - title: Nitro
+        link: /docs/integrations/nitro
+        description: Nitro integration
+      - title: Waku
+        link: /docs/integrations/waku
+        description: Waku integration
+      - title: TanStack Start
+        link: /docs/integrations/tanstack-start
+        description: TanStack Start integration
+      - title: Lynx
+        link: /docs/integrations/lynx
+        description: Lynx integration
+      - title: Expo
+        link: /docs/integrations/expo
+        description: Expo mobile integration
+      - title: Electron
+        link: /docs/integrations/electron
+        description: Electron desktop integration
+      - title: Convex
+        link: /docs/integrations/convex
+        description: Convex integration
+      - title: Cloudflare Workers
+        link: /docs/integrations/cloudflare
+        description: Cloudflare Workers integration
+
+  - title: Infrastructure
+    slug: infrastructure
+    link: /docs/infrastructure/getting-started
+    description: Deployment and infrastructure
+    pages:
+      - title: Getting Started
+        link: /docs/infrastructure/getting-started
+        description: Infrastructure setup
+      - title: Introduction
+        link: /docs/infrastructure/introduction
+        description: Infrastructure overview
+      - title: Email Service
+        link: /docs/infrastructure/email-service
+        description: Email service configuration
+      - title: SMS Service
+        link: /docs/infrastructure/sms-service
+        description: SMS service configuration
+      - title: Audit Logs
+        link: /docs/infrastructure/audit-logs
+        description: Audit logging
+      - title: Dashboard
+        link: /docs/infrastructure/dashboard
+        description: Admin dashboard
+      - title: Sentinel
+        link: /docs/infrastructure/sentinel
+        description: Security monitoring
+
+  - title: Guides
+    slug: guides
+    link: /docs/guides
+    description: Migration and how-to guides
+    pages:
+      - title: Auth0 Migration
+        link: /docs/guides/auth0
+        description: Migrate from Auth0
+      - title: Clerk Migration
+        link: /docs/guides/clerk
+        description: Migrate from Clerk
+      - title: Supabase Migration
+        link: /docs/guides/supabase
+        description: Migrate from Supabase
+      - title: WorkOS Migration
+        link: /docs/guides/workos
+        description: Migrate from WorkOS
+      - title: Auth.js Migration
+        link: /docs/guides/authjs
+        description: Migrate from Auth.js
+      - title: Browser Extension
+        link: /docs/guides/browser-extension
+        description: Browser extension auth
+      - title: Dynamic Base URL
+        link: /docs/guides/dynamic-base-url
+        description: Configure dynamic base URL
+      - title: SAML SSO with Okta
+        link: /docs/guides/saml-okta
+        description: SAML SSO with Okta
+      - title: Optimizing Performance
+        link: /docs/guides/performance
+        description: Performance optimization
+      - title: Create Database Adapter
+        link: /docs/guides/create-database-adapter
+        description: Build a custom adapter
+      - title: Your First Plugin
+        link: /docs/guides/first-plugin
+        description: Create your first plugin
+
+  - title: Reference
+    slug: reference
+    link: /docs/reference
+    description: API reference and resources
+    pages:
+      - title: Options
+        link: /docs/reference/options
+        description: Configuration options
+      - title: Errors
+        link: /docs/reference/errors
+        description: Error codes and handling
+      - title: Security
+        link: /docs/reference/security
+        description: Security best practices
+      - title: FAQ
+        link: /docs/reference/faq
+        description: Frequently asked questions
+      - title: Contributing
+        link: /docs/reference/contributing
+        description: Contributing to Better Auth
+      - title: Resources
+        link: /docs/reference/resources
+        description: Additional resources
+      - title: Instrumentation
+        link: /docs/reference/instrumentation
+        description: Instrumentation and tracing
+      - title: Telemetry
+        link: /docs/reference/telemetry
+        description: Telemetry and analytics
+
+  - title: AI Resources
+    slug: ai-resources
+    link: /docs/ai-resources/skills
+    description: AI-powered resources
+    pages:
+      - title: Skills
+        link: /docs/ai-resources/skills
+        description: AI skills for Better Auth

@@ -1,0 +1,394 @@
+# Drizzle ORM Documentation Map
+# Generated: 2026-05-22
+# Source: https://orm.drizzle.team
+
+documentation:
+  url: https://orm.drizzle.team
+  title: Drizzle ORM
+  version: v1.x
+  description: TypeScript ORM for PostgreSQL, MySQL, SQLite, and more
+
+sections:
+  - title: Getting Started
+    slug: getting-started
+    link: /docs/get-started
+    description: Introduction and setup instructions for Drizzle ORM
+    pages:
+      - title: Get Started
+        link: /docs/get-started
+        description: Quick start guide for Drizzle ORM
+      - title: Overview
+        link: /docs/overview
+        description: What is Drizzle ORM and its core features
+      - title: Sustainability
+        link: /docs/sustainability
+        description: Project sustainability and maintenance
+      - title: Why Drizzle?
+        link: /docs/why-drizzle
+        description: Reasons to choose Drizzle over other ORMs
+      - title: Guides
+        link: /docs/guides
+        description: Comprehensive guides for common tasks
+      - title: Tutorials
+        link: /docs/tutorials
+        description: Step-by-step tutorials
+      - title: Latest Releases
+        link: /docs/releases
+        description: Recent changes and new features
+      - title: Gotchas
+        link: /docs/gotchas
+        description: Common pitfalls and how to avoid them
+
+  - title: Upgrade to v1.0 RC
+    slug: upgrade
+    link: /docs/upgrade
+    description: Migration guides for upgrading to v1.0
+    pages:
+      - title: How to Upgrade?
+        link: /docs/upgrade/how-to-upgrade
+        description: Step-by-step upgrade instructions
+      - title: Relational Queries v1 to v2
+        link: /docs/upgrade/relational-queries
+        description: Migrating from relational queries v1 to v2
+
+  - title: Fundamentals
+    slug: fundamentals
+    link: /docs/fundamentals
+    description: Core concepts and basic operations
+    pages:
+      - title: Schema
+        link: /docs/fundamentals/schema
+        description: Defining database schemas in TypeScript
+      - title: Relations
+        link: /docs/fundamentals/relations
+        description: Defining table relationships
+      - title: Database Connection
+        link: /docs/fundamentals/connection
+        description: Connecting to your database
+      - title: Query Data
+        link: /docs/fundamentals/query-data
+        description: Querying data from tables
+      - title: Migrations
+        link: /docs/fundamentals/migrations
+        description: Database migration basics
+
+  - title: Connect
+    slug: connect
+    link: /docs/connect
+    description: Database drivers and hosting platforms
+    pages:
+      - title: PostgreSQL
+        link: /docs/connect/postgresql
+        description: Connect to PostgreSQL databases
+      - title: Gel
+        link: /docs/connect/gel
+        description: Connect to Gel databases
+      - title: MySQL
+        link: /docs/connect/mysql
+        description: Connect to MySQL databases
+      - title: SQLite
+        link: /docs/connect/sqlite
+        description: Connect to SQLite databases
+      - title: MSSQL
+        link: /docs/connect/mssql
+        description: Connect to Microsoft SQL Server
+      - title: CockroachDB
+        link: /docs/connect/cockroachdb
+        description: Connect to CockroachDB
+      - title: SingleStore
+        link: /docs/connect/singlestore
+        description: Connect to SingleStore
+      - title: PlanetScale Postgres
+        link: /docs/connect/planetscale-postgres
+        description: Connect to PlanetScale (MySQL)
+      - title: Neon
+        link: /docs/connect/neon
+        description: Connect to Neon serverless Postgres
+      - title: Vercel Postgres
+        link: /docs/connect/vercel-postgres
+        description: Connect to Vercel Postgres
+      - title: Supabase
+        link: /docs/connect/supabase
+        description: Connect to Supabase
+      - title: Xata
+        link: /docs/connect/xata
+        description: Connect to Xata
+      - title: PGLite
+        link: /docs/connect/pglite
+        description: Connect to PGLite (PostgreSQL in browser)
+      - title: Nile
+        link: /docs/connect/nile
+        description: Connect to Nile serverless Postgres
+      - title: Bun SQL
+        link: /docs/connect/bun-sql
+        description: Connect using Bun's built-in SQL support
+      - title: Effect Postgres
+        link: /docs/connect/effect-postgres
+        description: Connect with Effect framework
+      - title: Netlify Database
+        link: /docs/connect/netlify
+        description: Connect to Netlify Database
+      - title: Turso
+        link: /docs/connect/turso
+        description: Connect to Turso (libSQL)
+      - title: SQLite Cloud
+        link: /docs/connect/sqlite-cloud
+        description: Connect to SQLite Cloud
+      - title: Cloudflare D1
+        link: /docs/connect/cloudflare-d1
+        description: Connect to Cloudflare D1
+      - title: Bun SQLite
+        link: /docs/connect/bun-sqlite
+        description: Connect to SQLite with Bun
+      - title: Node SQLite
+        link: /docs/connect/node-sqlite
+        description: Connect to SQLite with Node.js
+      - title: Cloudflare Durable Objects
+        link: /docs/connect/cloudflare-durable-objects
+        description: Connect to Durable Objects
+      - title: Expo SQLite
+        link: /docs/connect/expo-sqlite
+        description: Connect with Expo SQLite
+      - title: OP SQLite
+        link: /docs/connect/op-sqlite
+        description: Connect with OP SQLite
+      - title: React Native SQLite
+        link: /docs/connect/react-native-sqlite
+        description: Connect with React Native
+      - title: AWS Data API
+        link: /docs/connect/aws-data-api
+        description: Connect to AWS RDS Data API
+
+  - title: Manage Schema
+    slug: schema
+    link: /docs/schema
+    description: Database schema management
+    pages:
+      - title: Data Types
+        link: /docs/schema/data-types
+        description: Supported data types and column definitions
+      - title: Indexes & Constraints
+        link: /docs/schema/indexes-constraints
+        description: Creating indexes and constraints
+      - title: Sequences
+        link: /docs/schema/sequences
+        description: Auto-increment and sequences
+      - title: Views
+        link: /docs/schema/views
+        description: Creating database views
+      - title: Schemas
+        link: /docs/schema/schemas
+        description: Database schemas organization
+      - title: Drizzle Relations
+        link: /docs/schema/relations
+        description: Defining table relationships with Drizzle
+      - title: Row-Level Security
+        link: /docs/schema/row-level-security
+        description: RLS policies and security
+      - title: Extensions
+        link: /docs/schema/extensions
+        description: Database extensions
+
+  - title: Migrations
+    slug: migrations
+    link: /docs/migrations
+    description: Database migration tools and workflows
+    pages:
+      - title: Overview
+        link: /docs/migrations/overview
+        description: Migration system overview
+      - title: Generate
+        link: /docs/migrations/generate
+        description: Generate migration files from schema changes
+      - title: Migrate
+        link: /docs/migrations/migrate
+        description: Run migrations programmatically
+      - title: Push
+        link: /docs/migrations/push
+        description: Push schema changes directly to database
+      - title: Pull
+        link: /docs/migrations/pull
+        description: Pull schema from existing database
+      - title: Export
+        link: /docs/migrations/export
+        description: Export migrations
+      - title: Check
+        link: /docs/migrations/check
+        description: Check migration status
+      - title: Up
+        link: /docs/migrations/up
+        description: Apply pending migrations
+      - title: Studio
+        link: /docs/migrations/studio
+        description: Drizzle Studio visual editor
+      - title: Custom Migrations
+        link: /docs/migrations/custom-migrations
+        description: Writing custom SQL migrations
+      - title: Migrations for Teams
+        link: /docs/migrations/teams
+        description: Team-based migration workflows
+      - title: Web and Mobile
+        link: /docs/migrations/web-mobile
+        description: Migrations for web and mobile apps
+      - title: drizzle.config.ts
+        link: /docs/migrations/drizzle-config
+        description: Configuration file reference
+
+  - title: Seeding
+    slug: seeding
+    link: /docs/seeding
+    description: Database seeding tools
+    pages:
+      - title: Overview
+        link: /docs/seeding/overview
+        description: Seeding system overview
+      - title: Generators
+        link: /docs/seeding/generators
+        description: Generate seed data
+      - title: Versioning
+        link: /docs/seeding/versioning
+        description: Version seed data
+
+  - title: Access Your Data
+    slug: query
+    link: /docs/query
+    description: Data access and manipulation
+    pages:
+      - title: Query
+        link: /docs/query/query
+        description: Basic query operations
+      - title: Select
+        link: /docs/query/select
+        description: SELECT statements and projections
+      - title: Insert
+        link: /docs/query/insert
+        description: INSERT statements
+      - title: Update
+        link: /docs/query/update
+        description: UPDATE statements
+      - title: Delete
+        link: /docs/query/delete
+        description: DELETE statements
+      - title: Filters
+        link: /docs/query/filters
+        description: WHERE clauses and conditions
+      - title: Utils
+        link: /docs/query/utils
+        description: Utility functions and helpers
+      - title: Joins
+        link: /docs/query/joins
+        description: JOIN operations
+      - title: sql Operator
+        link: /docs/query/sql-operator
+        description: Raw SQL operator
+
+  - title: Performance
+    slug: performance
+    link: /docs/performance
+    description: Optimization and performance tuning
+    pages:
+      - title: Queries
+        link: /docs/performance/queries
+        description: Query optimization techniques
+      - title: Serverless
+        link: /docs/performance/serverless
+        description: Performance in serverless environments
+
+  - title: Advanced
+    slug: advanced
+    link: /docs/advanced
+    description: Advanced database features
+    pages:
+      - title: Set Operations
+        link: /docs/advanced/set-operations
+        description: UNION, INTERSECT, EXCEPT
+      - title: Generated Columns
+        link: /docs/advanced/generated-columns
+        description: Computed columns
+      - title: Transactions
+        link: /docs/advanced/transactions
+        description: ACID transactions
+      - title: Batch
+        link: /docs/advanced/batch
+        description: Batch operations
+      - title: Cache
+        link: /docs/advanced/cache
+        description: Query caching
+      - title: Dynamic Query Building
+        link: /docs/advanced/dynamic
+        description: Building queries dynamically
+      - title: Read Replicas
+        link: /docs/advanced/read-replicas
+        description: Routing reads to replicas
+      - title: Custom Types
+        link: /docs/advanced/custom-types
+        description: Defining custom types
+      - title: Goodies
+        link: /docs/advanced/goodies
+        description: Additional utilities and helpers
+
+  - title: Validations
+    slug: validation
+    link: /docs/validation
+    description: Schema validation integrations
+    pages:
+      - title: Zod
+        link: /docs/validation/zod
+        description: Zod schema validation
+      - title: Valibot
+        link: /docs/validation/valibot
+        description: Valibot schema validation
+      - title: TypeBox
+        link: /docs/validation/typebox
+        description: TypeBox schema validation
+      - title: ArkType
+        link: /docs/validation/arktype
+        description: ArkType schema validation
+      - title: TypeBox Legacy
+        link: /docs/validation/typebox-legacy
+        description: Legacy TypeBox support
+      - title: Effect Schema
+        link: /docs/validation/effect-schema
+        description: Effect schema validation
+
+  - title: Extensions
+    slug: extensions
+    link: /docs/extensions
+    description: Additional features and integrations
+    pages:
+      - title: Prisma
+        link: /docs/extensions/prisma
+        description: Prisma compatibility layer
+      - title: ESLint Plugin
+        link: /docs/extensions/eslint-plugin
+        description: ESLint rules for Drizzle
+      - title: Drizzle GraphQL
+        link: /docs/extensions/graphql
+        description: GraphQL integration
+
+  - title: Tools
+    slug: tools
+    link: /docs/tools
+    description: Development tools and utilities
+    pages:
+      - title: Roadmap
+        link: /docs/tools/roadmap
+        description: Project roadmap
+      - title: Benchmarks
+        link: /docs/tools/benchmarks
+        description: Performance benchmarks
+      - title: Extension
+        link: /docs/tools/extension
+        description: VS Code extension
+      - title: Studio
+        link: /docs/tools/studio
+        description: Drizzle Studio visual interface
+      - title: Studio Package
+        link: /docs/tools/studio-package
+        description: Drizzle Studio npm package
+      - title: Gateway
+        link: /docs/tools/gateway
+        description: Drizzle Gateway
+      - title: Drizzle Run
+        link: /docs/tools/drizzle-run
+        description: Run Drizzle in the cloud

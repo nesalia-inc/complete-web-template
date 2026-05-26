@@ -1,0 +1,168 @@
+# React Documentation Map
+# Generated: 2026-05-22
+# Source: https://react.dev
+
+documentation:
+  url: https://react.dev
+  title: React
+  version: latest
+  description: The library for web and native user interfaces
+
+sections:
+  - title: Learn React
+    slug: learn
+    link: /
+    description: Start your React journey with fundamentals
+    pages:
+      - title: Quick Start
+        link: /
+        description: Learn React basics quickly
+      - title: Tutorial
+        link: /learn
+        description: Step-by-step React tutorial
+      - title: Thinking in React
+        link: /learn/thinking-in-react
+        description: How to think about React component design
+
+  - title: Reference
+    slug: reference
+    link: /reference/react
+    description: Complete API reference
+    pages:
+      - title: React APIs
+        link: /reference/react
+        description: React core APIs
+        sub_pages:
+          - title: createElement
+            link: /reference/react/createElement
+          - title: cloneElement
+            link: /reference/react/cloneElement
+          - title: createContext
+            link: /reference/react/createContext
+          - title: forwardRef
+            link: /reference/react/forwardRef
+          - title: isValidElement
+            link: /reference/react/isValidElement
+          - title: memo
+            link: /reference/react/memo
+          - title: startTransition
+            link: /reference/react/startTransition
+          - title: useAct
+            link: /reference/react/useAct
+      - title: Hooks
+        link: /reference/react/hooks
+        description: React Hooks API reference
+        sub_pages:
+          - title: useCallback
+            link: /reference/react/hooks/useCallback
+          - title: useContext
+            link: /reference/react/hooks/useContext
+          - title: useDebugValue
+            link: /reference/react/hooks/useDebugValue
+          - title: useEffect
+            link: /reference/react/hooks/useEffect
+          - title: useImperativeHandle
+            link: /reference/react/hooks/useImperativeHandle
+          - title: useInsertionEffect
+            link: /reference/react/hooks/useInsertionEffect
+          - title: useLayoutEffect
+            link: /reference/react/hooks/useLayoutEffect
+          - title: useMemo
+            link: /reference/react/hooks/useMemo
+          - title: useReducer
+            link: /reference/react/hooks/useReducer
+          - title: useRef
+            link: /reference/react/hooks/useRef
+          - title: useState
+            link: /reference/react/hooks/useState
+          - title: useSyncExternalStore
+            link: /reference/react/hooks/useSyncExternalStore
+          - title: useTransition
+            link: /reference/react/hooks/useTransition
+      - title: Components
+        link: /reference/react/components
+        description: React component APIs
+        sub_pages:
+          - title: Fragment
+            link: /reference/react/Fragment
+          - title: Suspense
+            link: /reference/react/Suspense
+          - title: StrictMode
+            link: /reference/react/StrictMode
+
+  - title: React DOM APIs
+    slug: react-dom
+    link: /reference/react-dom
+    description: DOM-specific APIs for web applications
+    pages:
+      - title: Client APIs
+        link: /reference/react-dom/client
+        description: React DOM client APIs
+        sub_pages:
+          - title: createRoot
+            link: /reference/react-dom/client/createRoot
+          - title: hydrateRoot
+            link: /reference/react-dom/client/hydrateRoot
+      - title: Server APIs
+        link: /reference/react-dom/server
+        description: React DOM server APIs for SSR
+        sub_pages:
+          - title: renderToPipeableStream
+            link: /reference/react-dom/server/renderToPipeableStream
+          - title: renderToReadableStream
+            link: /reference/react-dom/server/renderToReadableStream
+          - title: renderToStaticMarkup
+            link: /reference/react-dom/server/renderToStaticMarkup
+          - title: renderToString
+            link: /reference/react-dom/server/renderToString
+      - title: useFormStatus
+        link: /reference/react-dom/forms
+        description: Form status hook
+      - title: flushSync
+        link: /reference/react-dom/flushSync
+        description: Force synchronous updates
+
+  - title: React Compiler
+    slug: react-compiler
+    link: /reference/react-compiler
+    description: React Compiler for automatic optimization
+    pages:
+      - title: Configuration
+        link: /reference/react-compiler/configuration
+        description: Configure React Compiler
+      - title: Compiling Libraries
+        link: /reference/react-compiler/compiling-libraries
+        description: Compile React libraries
+      - title: Rules
+        link: /reference/react-compiler/rules
+        description: React Compiler rules
+
+  - title: Rules of React
+    slug: rules
+    link: /reference/rules
+    description: Fundamental rules for writing React code
+    pages:
+      - title: Components and Hooks Must Be Pure
+        link: /reference/rules/components-and-hooks-must-be-pure
+        description: Purity requirements
+      - title: React Calls Components and Hooks
+        link: /reference/rules/react-calls-components-and-hooks
+        description: How React invokes your code
+      - title: Rules of Hooks
+        link: /reference/rules/rules-of-hooks
+        description: Rules for using hooks
+
+  - title: Testing
+    slug: testing
+    link: /reference/testing
+    description: Testing React applications
+    pages:
+      - title: Overview
+        link: /reference/testing
+        description: Testing overview
+      - title: Test Renderer
+        link: /reference/testing/test-renderer
+        description: Render React trees for testing
+      - title: Test Utils
+        link: /reference/testing/test-utils
+        description: Testing utilities

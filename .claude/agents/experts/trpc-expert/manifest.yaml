@@ -1,0 +1,163 @@
+# tRPC Documentation Map
+# Generated: 2026-05-22
+# Source: https://trpc.io/docs
+
+documentation:
+  url: https://trpc.io
+  title: tRPC
+  version: 11.x
+  description: Move Fast and Make No Compromises with End-to-End Typesafe APIs
+
+sections:
+  - title: Introduction
+    slug: intro
+    link: /
+    description: What is tRPC and why use it
+    pages:
+      - title: Introduction
+        link: /
+        description: Overview of tRPC
+      - title: Features
+        link: /features
+        description: Key features of tRPC
+      - title: Quick Look
+        link: /quickstart
+        description: Quick look at tRPC in action
+
+  - title: Getting Started
+    slug: getting-started
+    link: /docs
+    description: Get started with tRPC
+    pages:
+      - title: Quickstart
+        link: /docs/quickstart
+        description: Get up and running with tRPC
+      - title: Example Apps
+        link: /docs/example-apps
+        description: Official tRPC example applications
+      - title: Videos and Community
+        link: /docs/videos-and-community-resources
+        description: Learning resources and community
+
+  - title: Concepts
+    slug: concepts
+    link: /docs/concepts
+    description: Core tRPC concepts
+    pages:
+      - title: Server Procedures
+        link: /docs/server/procedures
+        description: Defining server procedures
+      - title: Context
+        link: /docs/server/context
+        description: Creating context for each request
+      - title: Error Handling
+        link: /docs/server/error-handling
+        description: Handling errors in tRPC
+      - title: Middleware
+        link: /docs/server/middleware
+        description: Server middleware
+      - title: Validators
+        link: /docs/server/validators
+        description: Input validation with Zod
+
+  - title: Server Usage
+    slug: server
+    link: /docs/server/overview
+    description: Server-side tRPC usage
+    pages:
+      - title: Overview
+        link: /docs/server/overview
+        description: Server-side overview
+      - title: Procedures
+        link: /docs/server/procedures
+        description: Query, mutation, and subscription procedures
+      - title: Routers
+        link: /docs/server/routers
+        description: Organizing procedures into routers
+      - title: Context
+        link: /docs/server/context
+        description: Request context
+      - title: Middleware
+        link: /docs/server/middleware
+        description: Authentication and logging middleware
+      - title: Error Handling
+        link: /docs/server/error-handling
+        description: Error handling patterns
+      - title: Validators
+        link: /docs/server/validators
+        description: Zod and other validators
+      - title: Subscriptions
+        link: /docs/server/subscriptions
+        description: Real-time subscriptions
+      - title: File Uploads
+        link: /docs/server/file-uploads
+        description: Handling file uploads
+
+  - title: Client Usage
+    slug: client
+    link: /docs/client
+    description: Client-side tRPC usage
+    pages:
+      - title: React Query
+        link: /docs/client/react-query
+        description: useQuery and useMutation hooks
+      - title: Server-Side Rendering
+        link: /docs/client/ssr
+        description: SSR with tRPC
+      - title: Prefetching
+        link: /docs/client/prefetching
+        description: Prefetching queries
+      - title: Invalidating Queries
+        link: /docs/client/invalidating-queries
+        description: Cache invalidation
+
+  - title: Integrations
+    slug: integrations
+    link: /docs/client/javascript
+    description: Framework integrations
+    pages:
+      - title: Next.js
+        link: /docs/nextjs
+        description: tRPC with Next.js
+      - title: Express
+        link: /docs/express
+        description: tRPC with Express
+      - title: Fastify
+        link: /docs/fastify
+        description: tRPC with Fastify
+      - title: Lambda
+        link: /docs/lambda
+        description: tRPC with AWS Lambda
+      - title: Bun
+        link: /docs/bun
+        description: tRPC with Bun
+
+  - title: Reference
+    slug: reference
+    link: /docs/server/overview
+    description: Complete API reference
+    pages:
+      - title: tRPC Function
+        link: /docs/server/trpc
+        description: Core tRPC function
+      - title: initTRPC
+        link: /docs/server/init-trpc
+        description: Initialize tRPC with configuration
+      - title: Query Options
+        link: /docs/client/queryoptions
+        description: Query options API
+      - title: API Reference
+        link: /docs/typedoc/client
+        description: Auto-generated API docs
+
+  - title: FAQ
+    slug: faq
+    link: /docs/faq
+    description: Frequently asked questions
+    pages:
+      - title: FAQ
+        link: /docs/faq
+        description: Common questions and answers
+      - title: Troubleshooting
+        link: /docs/faq
+        description: Troubleshooting guide

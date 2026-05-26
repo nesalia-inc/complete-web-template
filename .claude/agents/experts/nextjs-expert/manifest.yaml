@@ -1,0 +1,268 @@
+# Next.js Documentation Map
+# Generated: 2026-05-22
+# Source: https://nextjs.org/docs
+
+documentation:
+  url: https://nextjs.org
+  title: Next.js
+  version: 15.x
+  description: The React Framework for the Web
+
+sections:
+  - title: Getting Started (App Router)
+    slug: getting-started
+    link: /docs/app/getting-started
+    description: Get started with Next.js App Router
+    pages:
+      - title: Installation
+        link: /docs/app/getting-started/installation
+      - title: Project Structure
+        link: /docs/app/getting-started/project-structure
+      - title: Layouts and Pages
+        link: /docs/app/getting-started/layouts-and-pages
+      - title: Linking and Navigating
+        link: /docs/app/getting-started/linking-and-navigating
+      - title: Server and Client Components
+        link: /docs/app/getting-started/server-and-client-components
+      - title: Fetching Data
+        link: /docs/app/getting-started/fetching-data
+      - title: Mutating Data
+        link: /docs/app/getting-started/mutating-data
+      - title: Caching
+        link: /docs/app/getting-started/caching
+      - title: Revalidating
+        link: /docs/app/getting-started/revalidating
+      - title: Error Handling
+        link: /docs/app/getting-started/error-handling
+      - title: CSS
+        link: /docs/app/getting-started/css
+      - title: Image Optimization
+        link: /docs/app/getting-started/images
+      - title: Font Optimization
+        link: /docs/app/getting-started/fonts
+      - title: Metadata and OG Images
+        link: /docs/app/getting-started/metadata-and-og-images
+      - title: Route Handlers
+        link: /docs/app/getting-started/route-handlers
+      - title: Deploying
+        link: /docs/app/getting-started/deploying
+      - title: Upgrading
+        link: /docs/app/getting-started/upgrading
+
+  - title: Guides (App Router)
+    slug: guides
+    link: /docs/app/guides
+    description: In-depth guides for common patterns
+    pages:
+      - title: AI Coding Agents
+        link: /docs/app/guides/ai-agents
+      - title: Authentication
+        link: /docs/app/guides/authentication
+      - title: Testing
+        link: /docs/app/guides/testing
+        sub_pages:
+          - title: Cypress
+            link: /docs/app/guides/testing/cypress
+          - title: Jest
+            link: /docs/app/guides/testing/jest
+          - title: Playwright
+            link: /docs/app/guides/testing/playwright
+          - title: Vitest
+            link: /docs/app/guides/testing/vitest
+      - title: Internationalization
+        link: /docs/app/guides/internationalization
+      - title: MDX
+        link: /docs/app/guides/mdx
+      - title: Streaming
+        link: /docs/app/guides/streaming
+      - title: Server Rendering
+        link: /docs/app/guides/rendering-philosophy
+      - title: ISR
+        link: /docs/app/guides/incremental-static-regeneration
+      - title: CSS-in-JS
+        link: /docs/app/guides/css-in-js
+      - title: Tailwind CSS
+        link: /docs/app/guides/tailwind-v3-css
+      - title: Environment Variables
+        link: /docs/app/guides/environment-variables
+      - title: Debugging
+        link: /docs/app/guides/debugging
+      - title: Deployment
+        link: /docs/app/guides/deploying-to-platforms
+      - title: Migrating
+        link: /docs/app/guides/migrating
+        sub_pages:
+          - title: App Router Migration
+            link: /docs/app/guides/migrating/app-router-migration
+          - title: From Create React App
+            link: /docs/app/guides/migrating/from-create-react-app
+          - title: From Vite
+            link: /docs/app/guides/migrating/from-vite
+          - title: Version 15
+            link: /docs/app/guides/upgrading/version-15
+          - title: Version 16
+            link: /docs/app/guides/upgrading/version-16
+
+  - title: API Reference (App Router)
+    slug: api-reference
+    link: /docs/app/api-reference
+    description: Complete API reference for App Router
+    pages:
+      - title: Directives
+        link: /docs/app/api-reference/directives
+        sub_pages:
+          - title: use cache
+            link: /docs/app/api-reference/directives/use-cache
+          - title: use client
+            link: /docs/app/api_reference/directives/use-client
+          - title: use server
+            link: /docs/app/api_reference/directives/use-server
+      - title: Components
+        link: /docs/app/api-reference/components
+        sub_pages:
+          - title: Font
+            link: /docs/app/api-reference/components/font
+          - title: Form
+            link: /docs/app/api-reference/components/form
+          - title: Image
+            link: /docs/app/api-reference/components/image
+          - title: Link
+            link: /docs/app/api-reference/components/link
+          - title: Script
+            link: /docs/app/api-reference/components/script
+      - title: File Conventions
+        link: /docs/app/api-reference/file-conventions
+        sub_pages:
+          - title: layout.js
+            link: /docs/app/api-reference/file-conventions/layout
+          - title: page.js
+            link: /docs/app/api-reference/file-conventions/page
+          - title: route.js
+            link: /docs/app/api-reference/file-conventions/route
+          - title: error.js
+            link: /docs/app/api-reference/file-conventions/error
+          - title: loading.js
+            link: /docs/app/api-reference/file-conventions/loading
+          - title: not-found.js
+            link: /docs/app/api-reference/file-conventions/not-found
+          - title: template.js
+            link: /docs/app/api-reference/file-conventions/template
+          - title: Route Groups
+            link: /docs/app/api-reference/file-conventions/route-groups
+          - title: Parallel Routes
+            link: /docs/app/api-reference/file-conventions/parallel-routes
+          - title: Intercepting Routes
+            link: /docs/app/api-reference/file-conventions/intercepting-routes
+      - title: Functions
+        link: /docs/app/api-reference/functions
+        sub_pages:
+          - title: cookies
+            link: /docs/app/api-reference/functions/cookies
+          - title: headers
+            link: /docs/app/api-reference/functions/headers
+          - title: redirect
+            link: /docs/app/api-reference/functions/redirect
+          - title: notFound
+            link: /docs/app/api-reference/functions/not-found
+          - title: revalidatePath
+            link: /docs/app/api-reference/functions/revalidatePath
+          - title: revalidateTag
+            link: /docs/app/api-reference/functions/revalidateTag
+          - title: draftMode
+            link: /docs/app/api-reference/functions/draft-mode
+          - title: generateMetadata
+            link: /docs/app/api-reference/functions/generate-metadata
+          - title: generateStaticParams
+            link: /docs/app/api-reference/functions/generate-static-params
+      - title: Configuration
+        link: /docs/app/api-reference/config/next-config-js
+        sub_pages:
+          - title: reactStrictMode
+            link: /docs/app/api-reference/config/next-config-js/reactStrictMode
+          - title: output
+            link: /docs/app/api-reference/config/next-config-js/output
+          - title: images
+            link: /docs/app/api-reference/config/next-config-js/images
+          - title: webpack
+            link: /docs/app/api-reference/config/next-config-js/webpack
+          - title: turbopack
+            link: /docs/app/api-reference/config/next-config-js/turbopack
+      - title: CLI
+        link: /docs/app/api-reference/cli/next
+        sub_pages:
+          - title: create-next-app
+            link: /docs/app/api-reference/cli/create-next-app
+          - title: next dev
+            link: /docs/app/api-reference/cli/next
+          - title: next build
+            link: /docs/app/api-reference/cli/next
+          - title: next start
+            link: /docs/app/api-reference/cli/next
+
+  - title: Pages Router
+    slug: pages-router
+    link: /docs/pages/getting-started
+    description: Documentation for Pages Router (legacy)
+    pages:
+      - title: Getting Started
+        link: /docs/pages/getting-started
+        sub_pages:
+          - title: Installation
+            link: /docs/pages/getting-started/installation
+          - title: Project Structure
+            link: /docs/pages/getting-your-started/project-structure
+          - title: Deploying
+            link: /docs/pages/getting-started/deploying
+      - title: Routing
+        link: /docs/pages/building-your-application/routing
+        sub_pages:
+          - title: Pages and Layouts
+            link: /docs/pages/building-your-application/routing/pages-and-layouts
+          - title: Dynamic Routes
+            link: /docs/pages/building-your-application/routing/dynamic-routes
+          - title: API Routes
+            link: /docs/pages/building-your-application/routing/api-routes
+      - title: Data Fetching
+        link: /docs/pages/building-your-application/data-fetching
+        sub_pages:
+          - title: getServerSideProps
+            link: /docs/pages/building-your-application/data-fetching/get-server-side-props
+          - title: getStaticProps
+            link: /docs/pages/building-your-application/data-fetching/get-static-props
+          - title: getStaticPaths
+            link: /docs/pages/building-your-application/data-fetching/get-static-paths
+      - title: API Reference
+        link: /docs/pages/api-reference
+        sub_pages:
+          - title: getInitialProps
+            link: /docs/pages/api-reference/functions/get-initial-props
+          - title: Head
+            link: /docs/pages/api-reference/components/head
+          - title: Link
+            link: /docs/pages/api-reference/components/link
+          - title: Image (Legacy)
+            link: /docs/pages/api-reference/components/image-legacy
+
+  - title: Architecture
+    slug: architecture
+    link: /docs/architecture
+    description: Next.js internal architecture
+    pages:
+      - title: Accessibility
+        link: /docs/architecture/accessibility
+      - title: Fast Refresh
+        link: /docs/architecture/fast-refresh
+      - title: Next.js Compiler
+        link: /docs/architecture/nextjs-compiler
+      - title: Supported Browsers
+        link: /docs/architecture/supported-browsers
+
+  - title: Community
+    slug: community
+    link: /docs/community
+    description: Community and contribution guides
+    pages:
+      - title: Contribution Guide
+        link: /docs/community/contribution-guide
+      - title: Rspack
+        link: /docs/community/rspack
