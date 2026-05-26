@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { db, posts, eq, and, isNull } from '@complete-web-template/db';
-import { publicProcedure, protectedProcedure, createTRPCRouter } from '../init';
+import { posts, eq, and, isNull } from '@complete-web-template/db';
+import { publicProcedure, createTRPCRouter } from '../init';
 
 function generateSlug(title: string): string {
   const randomBytes = new Uint8Array(16);
@@ -26,11 +26,11 @@ const paginatedInput = z.object({
 export const postRouter = createTRPCRouter({
   list: publicProcedure
     .input(paginatedInput.optional())
-    .query(async ({ input }) => {
+    .query(async ({ input, ctx }) => {
       const limit = input?.limit ?? 20;
       const cursor = input?.cursor;
 
-      const results = await db
+      const results = await ctx.db
         .select()
         .from(posts)
         .where(isNull(posts.deletedAt))
@@ -47,9 +47,9 @@ export const postRouter = createTRPCRouter({
 
   byId: publicProcedure
     .input(z.object({ id: z.number() }))
-    .query(async ({ input }) => {
+    .query(async ({ input, ctx }) => {
       try {
-        const [result] = await db
+        const [result] = await ctx.db
           .select()
           .from(posts)
           .where(and(eq(posts.id, input.id), isNull(posts.deletedAt)));
@@ -59,7 +59,7 @@ export const postRouter = createTRPCRouter({
       }
     }),
 
-  create: protectedProcedure
+  create: publicProcedure
     .input(
       z.object({
         title: z.string().min(1).max(256),
@@ -67,10 +67,10 @@ export const postRouter = createTRPCRouter({
         slug: z.string().min(1).max(64).optional(),
       })
     )
-    .mutation(async ({ input }) => {
+    .mutation(async ({ input, ctx }) => {
       try {
         const slug = input.slug ?? generateSlug(input.title);
-        const [result] = await db
+        const [result] = await ctx.db
           .insert(posts)
           .values({
             title: input.title,
