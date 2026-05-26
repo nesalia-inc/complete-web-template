@@ -1,7 +1,7 @@
 import { saveCredentials, loadCredentials, clearCredentials, isExpired, type StoredCredentials } from "../lib/auth/storage.js";
 import { startDeviceFlow } from "../lib/auth/device-flow.js";
 
-const DEFAULT_AUTH_URL = process.env.BETTER_AUTH_URL || "http://localhost:3000";
+const DEFAULT_AUTH_URL = process.env.CWT_API_URL || process.env.BETTER_AUTH_URL || "http://localhost:3000";
 
 export async function login(): Promise<void> {
   console.log("  Starting device authorization flow...\n");

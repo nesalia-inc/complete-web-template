@@ -10,7 +10,10 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "typecheck": "tsc --noEmit",
-    "lint": "echo 'skip'"
+    "lint": "echo 'skip'",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "@clack/core": "^1.3.1",
@@ -19,6 +22,8 @@
     "open": "^10.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0"
+    "@complete-web-template/test-utils": "workspace:*",
+    "@types/node": "^22.0.0",
+    "vitest": "^4.1.7"
   }
 }

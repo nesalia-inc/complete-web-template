@@ -11,9 +11,13 @@ export type StoredCredentials = {
   expiresAt: number;
 };
 
+// Support test configuration via environment variable
+const configPath = process.env.CWT_CONFIG_PATH;
+
 export const storage = new Conf<{ credentials: StoredCredentials | null }>({
   projectName: "complete-web-template",
   configName: "auth",
+  cwd: configPath, // Use custom path if set (for tests)
   defaults: {
     credentials: null,
   },

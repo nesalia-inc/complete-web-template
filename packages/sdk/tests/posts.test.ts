@@ -1,8 +1,9 @@
 import { describe, it, expect, beforeAll } from "vitest";
-import { createTestClient } from "./helpers/client";
+import { createTestClient, testServer } from "./setup";
+import type { SDKClient } from "../src";
 
 describe("Posts API", () => {
-  let client: ReturnType<typeof createTestClient>;
+  let client: SDKClient;
 
   beforeAll(() => {
     client = createTestClient();
@@ -23,7 +24,7 @@ describe("Posts API", () => {
     const created = await client.posts.create({ title: "Find Me" });
 
     // Then fetch
-    const found = await client.posts.byId({ id: created.id });
+    const found = await client.posts.byId({ id: created.id as number });
 
     expect(found).toBeDefined();
     expect(found?.title).toBe("Find Me");

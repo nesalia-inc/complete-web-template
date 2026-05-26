@@ -1,6 +1,6 @@
 {
-  "name": "@complete-web-template/sdk",
-  "version": "1.0.0",
+  "name": "@complete-web-template/test-utils",
+  "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -13,21 +13,24 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "lint": "echo 'skip'",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:ui": "vitest --ui"
+    "lint": "echo 'skip'"
   },
   "dependencies": {
     "@better-auth/api-key": "^1.6.11",
+    "@better-auth/drizzle-adapter": "^1.6.11",
     "@complete-web-template/api": "workspace:*",
-    "@complete-web-template/test-utils": "workspace:*",
-    "@trpc/client": "^11.17.0",
-    "better-auth": "^1.6.11"
+    "@complete-web-template/auth": "workspace:*",
+    "@complete-web-template/db": "workspace:*",
+    "@trpc/server": "^11.17.0",
+    "better-auth": "^1.6.11",
+    "hono": "^4.12.23"
   },
   "devDependencies": {
-    "@complete-web-template/test-utils": "workspace:*",
+    "@types/node": "^22.0.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.7"
+  },
+  "peerDependencies": {
+    "vitest": "^4.0.0 || ^5.0.0"
   }
 }
