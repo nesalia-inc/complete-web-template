@@ -89,7 +89,7 @@ async function pollForToken(data: DeviceCodeResponse, baseUrl: string): Promise<
           })
           console.log(`  Session response status: ${sessionRes.status}`)
           if (sessionRes.ok) {
-            const sessionData = await sessionRes.json()
+            const sessionData = await response.json() as { user?: { id: string; name: string; email: string; image?: string } }
             console.log(`  Session data: ${JSON.stringify(sessionData)}`)
             // better-auth returns { session: {...}, user: {...} } directly
             if (sessionData?.user) {

@@ -49,7 +49,7 @@ export async function status(): Promise<void> {
     });
 
     if (sessionRes.ok) {
-      const sessionData = await sessionRes.json();
+      const sessionData = await sessionRes.json() as { user?: { name?: string; email?: string } };
       if (sessionData?.user) {
         console.log(`  Logged in as ${sessionData.user.name} (${sessionData.user.email})`);
         return;
