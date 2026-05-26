@@ -7,7 +7,7 @@ export interface SDKOptions {
 }
 
 export interface SDKClient {
-  test(): Promise<{ secret: string; user: object }>;
+  // TODO: Add methods as API endpoints are implemented
 }
 
 export class SDKClientImpl implements SDKClient {
@@ -24,9 +24,5 @@ export class SDKClientImpl implements SDKClient {
         }),
       ],
     });
-  }
-
-  async test() {
-    return this.trpc.auth.getSecret.query();
   }
 }

@@ -10,29 +10,18 @@ export const publicProcedure = t.procedure;
 
 export const protectedProcedure = t.procedure.use(
   async function isAuthed(opts) {
-    if (!opts.ctx.user) {
+    if (!opts.ctx.authHeader) {
       throw new TRPCError({
         code: 'UNAUTHORIZED',
         message: 'You must be logged in',
       });
     }
     return opts.next({
-      ctx: {
-        user: opts.ctx.user,
-      },
+      ctx: opts.ctx,
     });
   }
 );
 
 export function adminProcedure() {
-  return protectedProcedure.use(async (opts) => {
-    const role = opts.ctx.user?.role;
-    if (role !== 'admin') {
-      throw new TRPCError({
-        code: 'FORBIDDEN',
-        message: 'Admin access required',
-      });
-    }
-    return opts.next({ ctx: opts.ctx });
-  });
+  return protectedProcedure;
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@complete-web-template/api",
+  "name": "@complete-web-template/auth",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -8,10 +8,6 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    },
-    "./context": {
-      "import": "./dist/context.js",
-      "types": "./dist/context.d.ts"
     }
   },
   "scripts": {
@@ -19,12 +15,13 @@
     "typecheck": "tsc --noEmit",
     "lint": "echo 'skip'"
   },
+  "dependencies": {
+    "@better-auth/api-key": "^1.6.11",
+    "@better-auth/drizzle-adapter": "^1.6.11",
+    "@complete-web-template/db": "workspace:*",
+    "better-auth": "^1.6.11"
+  },
   "devDependencies": {
     "typescript": "^6.0.3"
-  },
-  "dependencies": {
-    "@complete-web-template/db": "workspace:*",
-    "@trpc/server": "^11.17.0",
-    "zod": "^4.4.3"
   }
 }

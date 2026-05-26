@@ -1,4 +1,4 @@
-import { auth } from "@complete-web-template/api/auth";
+import { auth } from "@complete-web-template/auth";
 import { toNextJsHandler } from "better-auth/next-js";
 
 export const dynamic = "force-dynamic";
