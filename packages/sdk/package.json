@@ -16,8 +16,10 @@
     "lint": "echo 'skip'"
   },
   "dependencies": {
+    "@better-auth/api-key": "^1.6.11",
+    "@complete-web-template/api": "workspace:*",
     "@trpc/client": "^11.17.0",
-    "@complete-web-template/api": "workspace:*"
+    "better-auth": "^1.6.11"
   },
   "devDependencies": {
     "typescript": "^6.0.3"
