@@ -1,9 +1,48 @@
-import { describe, it, expect, vi } from "vitest";
-import { login, status, logout } from "../src/commands/auth";
-import { loadCredentials, clearCredentials } from "../src/lib/auth/storage";
-import { testServerWithAuth } from "./setup";
+import { describe, it, expect, vi, beforeEach } from "vitest";
+import { status, logout } from "../src/commands/auth";
+import { loadCredentials, clearCredentials, saveCredentials } from "../src/lib/auth/storage";
+import { testServer } from "./setup";
+
+// Mock open before importing device-flow
+vi.mock("../src/lib/auth/device-flow", async () => {
+  const actual = await vi.importActual("../src/lib/auth/device-flow");
+  return {
+    ...actual,
+    startDeviceFlow: vi.fn().mockImplementation(async () => ({
+      accessToken: "test-access-token",
+      user: {
+        id: "test-user-id",
+        name: "Test User",
+        email: "test@example.com",
+      },
+    })),
+  };
+});
+
+// Import login AFTER mocking
+const { login } = await import("../src/commands/auth");
 
 describe("CLI Auth Commands", () => {
+  describe("login", () => {
+    it("should login successfully with device flow", async () => {
+      // Mock open to prevent browser from actually opening
+      const openMock = vi.fn();
+      vi.stubGlobal("open", Object.assign(openMock, { default: openMock }));
+
+      // Start login - it uses mocked startDeviceFlow internally
+      await login();
+
+      // Verify credentials were stored
+      const creds = loadCredentials();
+      expect(creds).toBeDefined();
+      expect(creds?.accessToken).toBe("test-access-token");
+      expect(creds?.user).toBeDefined();
+      expect(creds?.user.email).toBe("test@example.com");
+
+      vi.unstubAllGlobals();
+    });
+  });
+
   describe("status", () => {
     it("should show not logged in message when no credentials", async () => {
       const consoleSpy = vi.spyOn(console, "log").mockImplementation(() => {});
@@ -21,7 +60,6 @@ describe("CLI Auth Commands", () => {
       const consoleSpy = vi.spyOn(console, "log").mockImplementation(() => {});
 
       // Simulate logged in state
-      const { saveCredentials } = await import("../src/lib/auth/storage");
       saveCredentials({
         accessToken: "test-token",
         user: { id: "1", name: "Test User", email: "test@example.com" },
@@ -62,7 +100,6 @@ describe("CLI Auth Commands", () => {
       const consoleSpy = vi.spyOn(console, "log").mockImplementation(() => {});
 
       // Set up credentials
-      const { saveCredentials } = await import("../src/lib/auth/storage");
       saveCredentials({
         accessToken: "test-token",
         user: { id: "1", name: "Test User", email: "test@example.com" },
