@@ -15,6 +15,13 @@
       "when": 1779353955735,
       "tag": "0001_organic_blindfold",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1748414400000,
+      "tag": "0002_add_posts_slug_unique",
+      "breakpoints": true
     }
   ]
 }

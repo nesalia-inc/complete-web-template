@@ -17,10 +17,15 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "lint": "echo 'skip'"
+    "lint": "echo 'skip'",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest"
   },
   "devDependencies": {
-    "typescript": "^6.0.3"
+    "@electric-sql/pglite": "^0.5.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7"
   },
   "dependencies": {
     "@complete-web-template/db": "workspace:*",

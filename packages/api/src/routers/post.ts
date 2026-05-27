@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { posts, eq, and, isNull } from '@complete-web-template/db';
+import { posts, eq, and, isNull, gt } from '@complete-web-template/db';
 import { publicProcedure, createTRPCRouter } from '../init';
 
 function generateSlug(title: string): string {
@@ -30,13 +30,18 @@ export const postRouter = createTRPCRouter({
       const limit = input?.limit ?? 20;
       const cursor = input?.cursor;
 
+      // Build where clause: always filter soft-deleted, optionally filter by cursor
+      const whereConditions = [isNull(posts.deletedAt)];
+      if (cursor !== undefined) {
+        whereConditions.push(gt(posts.id, cursor));
+      }
+
       const results = await ctx.db
         .select()
         .from(posts)
-        .where(isNull(posts.deletedAt))
+        .where(and(...whereConditions))
         .orderBy(posts.id)
-        .limit(limit + 1)
-        .offset(cursor ? 1 : 0);
+        .limit(limit + 1);
 
       const hasMore = results.length > limit;
       const items = hasMore ? results.slice(0, -1) : results;
